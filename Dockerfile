@@ -12,7 +12,7 @@ COPY client/package.json /app/package.json
 RUN npm install --silent
 RUN npm install react-scripts@4.0.3 -g --silent
 
-# start app
+# start the app
 COPY client/public /app/public
 COPY client/src /app/src
 CMD ["npm", "start"]
